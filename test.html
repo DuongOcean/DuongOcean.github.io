@@ -1,0 +1,75 @@
+<!--
+Nhập và lấy kqua
+    <form action="">
+        x = <input type="text" id="txt_x" /> <br>
+        y = <input type="text" id="txt_y"/> <br>
+        <button type="button" onclick="TinhTong()">Tính tổng</button> <br>
+        Kết quả: <p id="kq"></p>
+    </form>
+
+    <script>
+        function TinhTong(){
+             //1.  lấy giá trị trong thẻ input người dùng nhập
+            var x = document.querySelector('#txt_x').value;
+            var y = document.getElementById("txt_y").value;
+
+            x = parseFloat(x); //2. chuyển kiểu dữ liệu về dạng số
+            y = parseFloat(y);
+            //3. tính toán
+            var tong = x + y ;
+            //4. đưa giá trị tổng vào trong thẻ div kq.
+            document.querySelector('#kq').innerHTML = tong;
+            //5. Gọi hàm tính tổng ở thuộc tính onClick trên nut bấm. 
+
+        } 
+    </script>
+
+Tạo chuyển động
+    <div class="container">
+        <h2>Freetuts.net hướng dẫn tạo hiệu ứng Animation</h2>
+        <button id="btn" onclick="myMove()">Xem kết quả</button>
+        <div id ="myContainer">
+            <div id ="myAnimation"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function myMove() {
+            var btn = document.getElementById("btn"); 
+            btn.style.display = "none";
+            var elem = document.getElementById("myAnimation");   
+            var pos = 0;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (pos == 350) {
+                    pos = 0;
+                } else {
+                  pos++; 
+                  elem.style.top = pos + 'px'; 
+                  elem.style.left = pos + 'px'; 
+                }
+            }
+        }
+    </script>
+
+Sự kiện
+    onclick	Sự kiện xảy ra khi người dùng click chuột vào phần tử
+    ondblclick	Sự kiện xảy ra khi người dùng click kép chuột vào phần tử
+    onmouseenter	Sự kiện xảy ra khi người dùng di chuyển con trỏ vào phần tử
+    onmouseleave	Sự kiện xảy ra khi người dùng di chuyển con trỏ ra khỏi phần tử.
+    onkeydown	Sự kiện xảy ra khi người dùng đang nhấn một phím
+    onkeyup	Sự kiện xảy ra khi người dùng nhả phím ra
+    oncopy	Sự kiện xảy ra khi người dùng sao chép nội dung của phần tử
+    oncut	Sự kiện xảy ra khi người dùng cắt nội dung của phần tử
+    onpaste	Sự kiện xảy ra khi người dùng dán nội dung vào phần tử
+    onchange	Sự kiện xảy ra khi người dùng thay đổi giá trị của phần tử
+
+Chuột
+    document.addEventListener("click", printMousePos);
+    function printMousePos(e) {
+    var cursorX = e.pageX;
+    var cursorY = e.pageY;
+    document.getElementById('test').innerHTML = "x: " + cursorX + ", y: " + cursorY;
+    }
+
+
+-->
