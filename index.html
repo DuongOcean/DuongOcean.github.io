@@ -26,6 +26,13 @@
                 (┬┬__┬┬)
             </p>
         </div>
+        <img id="load" src="image/load.png"></img>
+        <img id="play" src="image/play.png"></img>
+        <div id="TBLoiNoiDau">
+            <p id="loiNoiDau">
+
+            </p>
+        </div>
         <div id="loiThoai"></div>
         <!--
         <img id="du" src="image/" />
@@ -36,8 +43,30 @@
         
         -->
         <script lang="javasctipt">
-            alert(screen.width);
-            alert(screen.height);
+            var load = document.getElementById('load');
+            var deg = 0;
+            var l = setInterval(()=>{
+                deg += 20;
+            load.style.transform = 'rotate(' + deg + 'deg)';
+            },100);
+            var moDau = false, gioiThieu = false;
+
+            window.onload = () => {
+                if (screen.width < 600)
+                {
+                    var tb = document.getElementById('thongBao');
+                    tb.style.opacity = '100%';
+                }
+                else
+                {
+                    modau = true;
+                }
+                clearInterval(l);
+                load.style.opacity = '0%';
+                var play = document.getElementById('play');
+                play.style.opacity = '100%';
+            }
+                   
         </script>
         <link rel="stylesheet" href="filecss.css" />
     </body>

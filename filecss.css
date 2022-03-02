@@ -9,6 +9,7 @@ body {
   border-radius: 50px;
   margin: 0 auto;
   top: 150px;
+  opacity: 0%;
 }
 
 #yeuCau {
@@ -46,11 +47,12 @@ body {
   border: solid 3px;
   border-radius: 30px;
   margin: 0 auto;
-  top: 35vw;
+  top: 20%;
   left: 10vw;
   width: 80vw;
   height: 30vw;
   text-align: center;
+  opacity: 0%;
 }
 
 #yeuCau2 {
@@ -64,4 +66,23 @@ body {
   position: relative;
   font-size: 5vw;
   bottom: 8vw;
+}
+
+#load {
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  left: 47vw;
+  top: 15vw;
+  transform: rotate(0deg);
+  opacity: 100%;
+}
+
+#play {
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  left: 47vw;
+  top: 15vw;
+  opacity: 0%;
 }
