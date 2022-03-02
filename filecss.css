@@ -5,7 +5,7 @@ body {
   position: relative;
   width: 300px;
   height: 150px;
-  border: solid black 5px;
+  border: solid rgb(0, 0, 0) 5px;
   border-radius: 50px;
   margin: 0 auto;
   top: 150px;
@@ -39,4 +39,26 @@ body {
   height: 20px;
   border-radius: 10px;
   border: solid 1px;
+}
+
+#thongBao {
+  position: absolute;
+  border: solid 3px;
+  border-radius: 30px;
+  margin: 0 auto;
+  top: 35%;
+  left: 10%;
+  width: 80%;
+  height: 30%;
+  text-align: center;
+}
+
+#yeuCau2 {
+  position: relative;
+  top: 10%;
+  font-family: Arial;
+}
+
+#matBuon {
+  position: relative;
 }
