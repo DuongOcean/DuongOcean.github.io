@@ -46,19 +46,22 @@ body {
   border: solid 3px;
   border-radius: 30px;
   margin: 0 auto;
-  top: 35%;
-  left: 10%;
-  width: 80%;
-  height: 30%;
+  top: 35vw;
+  left: 10vw;
+  width: 80vw;
+  height: 30vw;
   text-align: center;
 }
 
 #yeuCau2 {
   position: relative;
-  top: 10%;
   font-family: Arial;
+  top: 1vw;
+  font-size: 5vw;
 }
 
 #matBuon {
   position: relative;
+  font-size: 5vw;
+  bottom: 8vw;
 }
