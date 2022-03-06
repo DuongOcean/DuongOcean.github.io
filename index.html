@@ -1,7 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script src="filejs.js"></script>
+        <!--<script src="filejs.js"></script>-->
+        <style type="text/css">
+            body {
+            margin: 0 auto;
+            }
+            #bangNhapTen {
+            position: relative;
+            width: 300px;
+            height: 150px;
+            border: solid rgb(0, 0, 0) 5px;
+            border-radius: 50px;
+            margin: 0 auto;
+            top: 150px;
+            opacity: 0%;
+            }
+
+            #yeuCau {
+            position: relative;
+            text-align: center;
+            top: 5px;
+            font-size: 20px;
+            font-family: Arial;
+            }
+
+            #khungTen {
+            position: relative;
+            text-align: center;
+            }
+
+            #ten {
+            position: relative;
+            border: solid 1px;
+            border-radius: 10px;
+            height: 20px;
+            text-align: center;
+            font-size: 15px;
+            }
+
+            #OK {
+            position: relative;
+            top: 15px;
+            height: 20px;
+            border-radius: 10px;
+            border: solid 1px;
+            }
+
+            #thongBao {
+            position: absolute;
+            border: solid 3px;
+            border-radius: 30px;
+            top: 20%;
+            left: 10vw;
+            width: 80vw;
+            height: 30vw;
+            text-align: center;
+            opacity: 0%;
+            }
+
+            #yeuCau2 {
+            position: relative;
+            font-family: Arial;
+            top: 1vw;
+            font-size: 5vw;
+            }
+
+            #matBuon {
+            position: relative;
+            font-size: 5vw;
+            bottom: 8vw;
+            }
+
+            #load {
+            position: absolute;
+            width: 6vw;
+            height: 6vw;
+            left: 47vw;
+            top: 200px;
+            transform: rotate(0deg);
+            opacity: 100%;
+            }
+
+            #play {
+            position: absolute;
+            width: 6vw;
+            height: 6vw;
+            left: 47vw;
+            top: 200px;
+            opacity: 0%;
+            }
+
+            #TBMoDau {
+            position: absolute;
+            left: 30vw;
+            width: 40vw;
+            top: 50px;
+            opacity: 0%;
+            }
+
+            #loiNoiDau1 {
+            position: relative;
+            text-align: center;
+            font-size: 15px;
+            font-family: Arial;
+            top: 65px;
+            }
+
+            #loiNoiDau2 {
+            position: relative;
+            text-align: center;
+            font-size: 15px;
+            font-family: Arial;
+            top: 20px;
+            }
+
+            #duong {
+            position: absolute;
+            border: solid 2px;
+            top: 400px;
+            width: 0vw;
+            background-color: black;
+            opacity: 0%;
+            }
+
+            #du {
+            position: absolute;
+            top: -200px;
+            width: 150px;
+            height: 150px;
+            left: 75px;
+            }
+
+            #lonCon {
+            position: absolute;
+            top: -100px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            }
+
+            #lonTo {
+            position: absolute;
+            top: -250px;
+            left: 700px;
+            width: 260px;
+            height: 260px;
+            opacity: 100%;
+            }
+
+            #bong {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 382px;
+            left: 888px;
+            opacity: 0%;
+            }
+
+            #ruong {
+            position: absolute;
+            top: -75px;
+            left: 730px;
+            width: 80px;
+            height: 80px;
+            opacity: 100%;
+            }
+
+            #loiThoai {
+            position: absolute;
+            top: -240px;
+            left: 210px;
+            width: 125px;
+            height: 55px;
+            font-family: Arial;
+            font-size: 15px;
+            text-align: center;
+            opacity: 0%;
+            }
+
+            #khungLoiThoai {
+            position: absolute;
+            top: -250px;
+            left: 200px;
+            width: 150px;
+            height: 150px;
+            opacity: 0%;
+            }
+
+            #qua {
+            position: absolute;
+            width: 150px;
+            height: 60px;
+            left: 700px;
+            top: 250px;
+            text-align: center;
+            opacity: 0%;
+            }
+        </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <title>
@@ -11,7 +207,8 @@
     <body>
         <div id="bangNhapTen">
             <p id="yeuCau">
-                Nhập tên bạn vào đây
+                Nhập tên chị vô đây nè <br/>
+                Đừng nhấn Enter nhé ^^
             </p>
             <form action="" id="khungTen">
                 <input type="text" id="ten" /><br/>
@@ -28,46 +225,1713 @@
         </div>
         <img id="load" src="image/load.png"></img>
         <img id="play" src="image/play.png"></img>
-        <div id="TBLoiNoiDau">
-            <p id="loiNoiDau">
-
+        <div id="TBMoDau">
+            <p id="loiNoiDau1">
+                Kỹ năng còn kém, ý tưởng hạn chế, thời gian ít ỏi @@
+            </p> <br>
+            <p id="loiNoiDau2">
+                Mong là bạn sẽ vui 😅
             </p>
         </div>
-        <div id="loiThoai"></div>
-        <!--
-        <img id="du" src="image/" />
-        <img id="lonCon" src="image/ngang5.png" onmouseenter="a()" onclick="b()" />
+        <div id="duong">
+
+        </div>
+        <img src="image/loithoai.png" id="khungLoiThoai" />
+        <div id="loiThoai"> 
+
+        </div>
+        <img id="ruong" src="image/ruong0.png" />
+        <img id="du" src="image/du2.png" />
         
-        <img id="lonTo" src="image/" />
-        <img id="ruong" src="image/" />
         
-        -->
+        <img id="lonTo" src="image/heolon0.png" />
+        <img id="bong" src="image/bongbong.png" />
+        <img id="lonCon" src="image/nhaydu1.png" />
+        <div id="qua"></div>
         <script lang="javasctipt">
+            var OK = document.getElementById('OK');
+            var bangNhapTen = document.getElementById('bangNhapTen');
             var load = document.getElementById('load');
-            var deg = 0;
+            var play = document.getElementById('play'); 
+            var TBMoDau = document.getElementById('TBMoDau');
+            var tb = document.getElementById('thongBao');
+            var duong = document.getElementById('duong');
+            var khungLoiThoai = document.getElementById('khungLoiThoai');
+            var loiThoai = document.getElementById('loiThoai');
+            var ruong = document.getElementById('ruong');
+            var du = document.getElementById('du');
+            var lonCon = document.getElementById('lonCon');
+            var lonTo = document.getElementById('lonTo');
+            var bong = document.getElementById('bong');
+            var deg = 0, daDamBong = false;
+            var yLonCon = 100, xlonCon = 310, yLonTo = 700, xLonTo;
+            var chuaNhaMuiTenPhai = true, chuaNhaMuiTenTrai = true;
+            var dungTrai = true, dungPhai = true, heoLonChuaRoi = true;
+            var t, t1, t2, t3, t4, t5, t6, t7, t8;
+            var s1, s2, s3, s4, s5, s6, s7, s8;
+            var l1, l2, l3, l4, b1, b2, b3, r1 = false;
+            var th1, th2, tr1, tr2, ph1, ph2;
+            var chuaGoi = true;
             var l = setInterval(()=>{
                 deg += 20;
             load.style.transform = 'rotate(' + deg + 'deg)';
             },100);
-            var moDau = false, gioiThieu = false;
+            var moDau = false, nutPlay = false;
 
             window.onload = () => {
                 if (screen.width < 600)
                 {
-                    var tb = document.getElementById('thongBao');
                     tb.style.opacity = '100%';
+                    clearInterval(l);
+                    load.style.opacity = '0%';
                 }
                 else
                 {
-                    modau = true;
+                    moDau = true;
                 }
-                clearInterval(l);
-                load.style.opacity = '0%';
-                var play = document.getElementById('play');
-                play.style.opacity = '100%';
+                setTimeout(mDau, 2000);
+                function mDau()
+                {
+
+                    if (moDau == true)
+                    {
+                        clearInterval(l);
+                        load.style.opacity = '0%';
+                        play.style.opacity = '100%';
+                        TBMoDau.style.opacity = '100%';
+                        nutPlay = true;
+                        play.onclick = gThieu;
+                    }
+                }
+                function gThieu()
+                {
+                    if (nutPlay)
+                    {
+                        nutPlay = false;
+                        var i = 90;
+                        l = setInterval(() => {
+                            TBMoDau.style.opacity = i + '%';
+                            play.style.opacity = i + '%';
+                            i -= 10;
+                            if (i < 0)
+                            {
+                                gioiThieu = true;
+                                clearInterval(l);
+                                gThieu1();
+                            }
+                        }, 100);
+                    }
+                }
+                function gThieu1()
+                {
+                    var i = 2;
+                    duong.style.opacity = '100%';
+                    l = setInterval(() => {
+                        duong.style.width = i + 'vw';
+                        i += 1;
+                        if (i > 99)
+                        {
+                            clearInterval(l);
+                            ruongRoi();
+                        }
+                    }, 30);
+                }
+                
+            }
+            function ruongRoi()
+            {
+                setTimeout(() => {
+                    ruong.style.opacity = '100%';
+                    var i = -55;
+                    l = setInterval(() => {
+                        ruong.style.top = i + 'px';
+                        i += 5;
+                        if (i > 345)
+                        {
+                            clearInterval(l);
+                            ruongNay();
+                        }
+                    }, 25);
+                }, 2000);
+            }
+            function ruongNay()
+            { 
+                var i = 340;
+                var tangGiam = 5;
+                l = setInterval(() => {
+                    ruong.style.top = i + 'px';
+                    ruong.src = 'image/ruong1.png';
+                    ruong.style.transform = 'rotate(5deg)';
+                    i -= tangGiam;
+                    if (i == 320)
+                        tangGiam = -5;
+                    if (i == 345)
+                        {
+                            clearInterval(l);
+                            ruong.src = 'image/ruong0.png';
+                            ruong.style.transform = 'rotate(0deg)';
+                            setTimeout(nhayDu, 1500);
+                        }
+                }, 80);
+            }
+            function nhayDu()
+            {
+                var xLonCon = -90, xDu = -190, xLoiThoai = -230, xKhungLoiThoai = -240;
+                l = setInterval(() => {
+                    lonCon.style.top = xLonCon + 'px';
+                    du.style.top = xDu + 'px';
+                    loiThoai.style.top = xLoiThoai + 'px';
+                    khungLoiThoai.style.top = xKhungLoiThoai + 'px';
+                    xLonCon += 1;
+                    xDu += 1;
+                    xLoiThoai += 1;
+                    xKhungLoiThoai += 1;
+                    if (xLonCon == 200)
+                        {
+                            clearInterval(l);
+                            chao();
+                        }
+                }, 30);
+                setTimeout(() => {
+                    t1 = setInterval(() => {
+                        lonCon.src = 'image/nhaydu1.png';
+                    }, 800);
+                }, 0);
+                setTimeout(() => {
+                    t2 = setInterval(() => {
+                        lonCon.src = 'image/nhaydu2.png';
+                    }, 800);
+                }, 200);
+                setTimeout(() => {
+                    t3 = setInterval(() => {
+                        lonCon.src = 'image/nhaydu3.png';
+                    }, 800);
+                }, 400);
+                setTimeout(() => {
+                    t4 = setInterval(() => {
+                        lonCon.src = 'image/nhaydu2.png';
+                    }, 800);
+                }, 600);
+
+            }
+            var loiThoai1 = false;
+            function chao()
+            {
+                khungLoiThoai.style.opacity = '100%';
+                loiThoai.style.opacity = '100%';
+                setTimeout(() => {
+                    loiThoai.innerHTML = "Cố gắng lấy quà nhé :3";
+                    loiThoai1 = true;
+                }, 500);
+            }
+            function thang() 
+            {
+                s1 = setTimeout(() => {
+                    th1 = setInterval(() => {
+                        lonCon.src = 'image/nhinthang0.png';
+                    }, 2000);
+                }, 0);
+                s2 = setTimeout(() => {
+                    th2 = setInterval(() => {
+                        lonCon.src = 'image/nhinthang1.png';
+                    }, 2000);
+                }, 1000);
+            }
+            function xthang()
+            {
+                clearTimeout(s1);
+                clearTimeout(s2);
+                clearInterval(th1);
+                clearInterval(th2);
+            }
+            function trai() 
+            {
+                s1 = setTimeout(() => {
+                    tr1 = setInterval(() => {
+                        lonCon.src = 'image/idlengangtrai0.png';
+                    }, 2000);
+                }, 0);
+                s2 = setTimeout(() => {
+                    tr2 = setInterval(() => {
+                        lonCon.src = 'image/idlengangtrai1.png';
+                    }, 2000);
+                }, 1000);
+            }
+            function xtrai()
+            {
+                clearTimeout(s1);
+                clearTimeout(s2);
+                clearInterval(tr1);
+                clearInterval(tr2);
+            }
+            function phai() 
+            {
+                s1 = setTimeout(() => {
+                    ph1 = setInterval(() => {
+                        lonCon.src = 'image/idlengangphai0.png';
+                    }, 2000);
+                }, 0);
+                s2 = setTimeout(() => {
+                    ph2 = setInterval(() => {
+                        lonCon.src = 'image/idlengangphai1.png';
+                    }, 2000);
+                }, 1000);
+            }
+            function xphai()
+            {
+                clearTimeout(s1);
+                clearTimeout(s2);
+                clearInterval(ph1);
+                clearInterval(ph2);
+            }
+            function lonRoi() 
+            {
+                diChuyen = false;
+                var i = -250;
+                l1 = setInterval(() => {
+                    i += 10;
+                    lonTo.style.top = i + 'px';
+                    if (i == 170)
+                    {
+                        clearInterval(l1);
+                        lonTo.src = 'image/heolontrenruong.png';
+                        diChuyen = true;
+                        setTimeout(() => {
+                            b1 = setInterval(() => {
+                                bong.style.opacity = '100%';
+                                bong.style.width = '20px';
+                                bong.style.height = '20px';
+                                bong.style.top = '382px';
+                            }, 2800);
+                        }, 1000);
+                        setTimeout(() => {
+                            b2 = setInterval(() => {
+                                bong.style.width = '30px';
+                                bong.style.height = '30px';
+                                bong.style.top = '372px';
+                            }, 2800);
+                        }, 1600);
+                        setTimeout(() => {
+                            b3 = setInterval(() => {
+                                bong.style.width = '40px';
+                                bong.style.height = '40px';
+                                bong.style.top = '362px';
+                            }, 2800);
+                        }, 2200);
+                    }
+                }, 20);
+            }
+            function xBong()
+            {
+                daDamBong = true;
+                clearInterval(b1);
+                clearInterval(b2);
+                clearInterval(b3);
+                bong.style.top = '-50px';
+                xLonTo = 170;
+                l4 = setInterval(() => {
+                    if (xLonTo >= 170 && chuaGoi)
+                    {
+                        chuaGoi = false;
+                        setTimeout(() => {
+                            lonToNay();
+                        }, 200);
+                    }
+                }, 200);
+            }
+            function lonToNay()
+            {
+                lonTo.src = 'image/heolon1.png';
+                xLonTo = 170;
+                var tangGiam = 5;
+                l1 = setInterval(() => {
+                    xLonTo -= tangGiam;
+                    lonTo.style.top = xLonTo + 'px';
+                    if (xLonTo == 100)
+                    {
+                        tangGiam = 2;
+                    }
+                    else if (xLonTo == 50)
+                    {
+                        clearInterval(l1);
+                        setTimeout(() => {
+                            l2 = setInterval(() => {
+                                xLonTo += tangGiam;
+                                lonTo.style.top = xLonTo + 'px';
+                                if (xLonTo == 100)
+                                {
+                                    tangGiam = 5;
+                                }
+                                else if (xLonTo >= 170)
+                                {
+                                    chuaGoi = true;
+                                    clearInterval(l2);
+                                    lonTo.src = 'image/heolon0.png';
+                                }
+                            }, 20);
+                        }, 300);
+                    }
+                }, 20);  
+            }
+            function damHeo()
+            {
+                if (trangThai == 'damnhayphai')
+                {
+                    if (xlonCon-xLonTo>=30 && xlonCon-xLonTo<=130 && yLonTo-yLonCon<=45 && yLonCon-yLonTo<=15)
+                    {
+                        l3 = setInterval(() => {
+                            if (yLonTo <= screen.width-260)
+                                yLonTo += 4;
+                            lonTo.style.left = yLonTo + 'px';
+                            if (yLonTo<=510 || yLonTo>=760)
+                            {
+                                clearInterval(l4);
+                                r1 = true;
+                            }
+                            if (xLonTo >= 170)
+                            {
+                                clearInterval(l3);
+                            }
+                        }, 20);
+                    }
+                }
+                else if (trangThai == 'damnhaytrai')
+                {
+                    if (xlonCon-xLonTo>=30 && xlonCon-xLonTo<=130 && yLonCon-yLonTo>=145 && yLonCon-yLonTo<=205)
+                    {
+                        l3 = setInterval(() => {
+                            if (yLonTo >= 0)
+                                yLonTo -= 4;
+                            lonTo.style.left = yLonTo + 'px';
+                            if (yLonTo<=510 || yLonTo>=760)
+                            {
+                                clearInterval(l4);
+                                r1 = true;
+                            }
+                            if (xLonTo >= 170)
+                            {
+                                clearInterval(l3);
+                            }
+                        }, 20);
+                    }
+                }
+            }
+            function damBong()
+            {
+                if (!daDamBong)
+                {
+                    if (trangThai == 'damphai' && yLonCon >= 816 && yLonCon <= 840)
+                    {
+                        xBong();
+                    }
+                    else if (trangThai == 'damtrai' && yLonCon >= 886 && yLonCon <= 906)
+                    {
+                        xBong();
+                    }
+                    else if (trangThai == 'damcuiphai' && yLonCon >= 812 && yLonCon <= 835)
+                    {
+                        xBong();
+                    }
+                    else if (trangThai == 'damcuitrai' && yLonCon >= 886 && yLonCon <= 909)
+                    {
+                        xBong();
+                    }
+                    else if (trangThai == 'damnhayphai' && yLonCon >= 816 && yLonCon <= 840 && xlonCon <= 310 && xlonCon >= 290)
+                    {
+                        xBong();
+                    }
+                    else if (trangThai == 'damnhaytrai' && yLonCon >= 886 && yLonCon <= 906 && xlonCon <= 310 && xlonCon >= 290)
+                    {
+                        xBong();
+                    }
+                }
+            }
+            var trangThai = 'nhinthang';
+            var loiThoai2 = false, loiThoai3 = false, loiThoai4 = false, loiThoai5 = false, loiThoai6 = false, diChuyen = false;
+            document.onkeydown = (event) => {
+                if (event.keyCode == 13)
+                {
+                    if (loiThoai1)
+                    {
+                        var xLonCon = 199, xDu = 99, xLoiThoai = 59, xKhungLoiThoai = 49;
+                        khungLoiThoai.style.opacity = '0%';
+                        loiThoai.style.opacity = '0%';
+                        l = setInterval(() => {
+                            lonCon.style.top = xLonCon + 'px';
+                            du.style.top = xDu + 'px';
+                            loiThoai.style.top = xLoiThoai + 'px';
+                            khungLoiThoai.style.top = xKhungLoiThoai + 'px';
+                            xLonCon += 1;
+                            xDu += 1;
+                            xLoiThoai += 1;
+                            xKhungLoiThoai += 1;
+                            if (xLonCon == 310)
+                            {
+                                clearInterval(l);
+                                chamDat();
+                            }
+                        }, 30);
+                        loiThoai1 = false;
+                    }
+                    else if (loiThoai2)
+                    {
+                        loiThoai.innerHTML = ' ';
+                        setTimeout(() => {
+                            loiThoai.innerHTML = "Tên bạn là gì nhỉ .-.";
+                            loiThoai2 = false;
+                            setTimeout(nhapTen, 1000);
+                        }, 500);
+                    }
+                    else if (loiThoai3)
+                    {
+                        loiThoai.innerHTML = ' ';
+                        setTimeout(() => {
+                            loiThoai.innerHTML = "Đi lấy quà thuii! Sử dụng các phím mũi tên để di chuyển!";
+                            loiThoai4 = true;
+                            loiThoai3 = false;
+                        }, 500);
+                    }
+                    else if (loiThoai4)
+                    {
+                        loiThoai.innerHTML = ' ';
+                        setTimeout(() => {
+                            loiThoai.innerHTML = 'Phím Space để nhảy, phím A để đấm và phím F để mở rương nha!';
+                            loiThoai5 = true;
+                            loiThoai4 = false;
+                        }, 500);
+                    }
+                    else if (loiThoai5)
+                    {
+                        loiThoai.innerHTML = ' ';
+                        setTimeout(() => {
+                            loiThoai.innerHTML = 'Vẫn còn một số lỗi chưa khắc phục được :< Thông cảm nha @@';
+                            loiThoai6 = true;
+                            loiThoai5 = false;
+                        }, 500);
+                    }
+                    else if (loiThoai6)
+                    {
+                        khungLoiThoai.style.opacity = '0%';
+                        loiThoai.style.opacity = '0%';
+                        loiThoai6 = false;
+                        diChuyen = true;
+                    }
+                }
+                else if (event.keyCode == 39 && diChuyen)
+                {
+                    if (diChuyen && heoLonChuaRoi)
+                    {
+                        lonRoi();
+                        heoLonChuaRoi = false;
+                    }
+                    if (trangThai == 'nhinthang')
+                    {
+                        xthang();
+                        trangThai = 'khongxacdinh';
+                        var xLonCon = 310;
+                        var tangGiam = 1;
+                        t1 = setInterval(() => {
+                            xLonCon -= tangGiam;
+                            lonCon.style.top = xLonCon + 'px';
+                            if (xLonCon == 290)
+                                tangGiam = -1;
+                            if (xLonCon == 310)
+                                clearInterval(t1);
+                            else if (xLonCon > 310)
+                            {
+                                xLonCon = 310;
+                                lonCon.style.top = xLonCon + 'px';
+                                clearInterval(t1);
+                            }
+                        }, 6);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoayphai0.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoayphai1.png';
+                        }, 60);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoayphai2.png';
+                        }, 120);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoayphai3.png';
+                        }, 180);
+                        setTimeout(() => {
+                            lonCon.src = 'image/idlengangphai0.png';
+                            trangThai = 'idlephai';
+                            phai();
+                        }, 240);
+                    }
+                    else if (trangThai == 'idletrai')
+                    {
+                        xtrai();
+                        trangThai = 'khongxacdinh';
+                        var xLonCon = 310;
+                        var tangGiam = 1;
+                        t1 = setInterval(() => {
+                            xLonCon -= tangGiam;
+                            lonCon.style.top = xLonCon + 'px';
+                            if (xLonCon == 290)
+                                tangGiam = -1;
+                            if (xLonCon == 310)
+                                clearInterval(t1);
+                            else if (xLonCon > 310)
+                            {
+                                xLonCon = 310;
+                                lonCon.style.top = xLonCon + 'px';
+                                clearInterval(t1);
+                            }
+                        }, 6);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoaytrai3.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoaytrai2.png';
+                        }, 60);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoaytrai1.png';
+                        }, 120);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoaytrai0.png';
+                        }, 180);
+                        setTimeout(() => {
+                            lonCon.src = 'image/nhinthang0.png';
+                            trangThai = 'nhinthang';
+                            thang();
+                        }, 240);
+                    }
+                    else if (trangThai == 'idlephai')
+                    {
+                        xphai();
+                        trangThai = 'chayphai';
+                        s1 = setTimeout(() => {
+                            t1 = setInterval(() => {
+                                lonCon.src = 'image/chayphai0.png';
+                            }, 160);
+                        }, 0);
+                        s2 = setTimeout(() => {
+                            t2 = setInterval(() => {
+                                lonCon.src = 'image/chayphai1.png';
+                            }, 160);
+                        }, 20);
+                        s3 = setTimeout(() => {
+                            t3 = setInterval(() => {
+                                lonCon.src = 'image/chayphai2.png';
+                            }, 160);
+                        }, 40);
+                        s4 = setTimeout(() => {
+                            t4 = setInterval(() => {
+                                lonCon.src = 'image/chayphai3.png';
+                            }, 160);
+                        }, 60);
+                        s5 = setTimeout(() => {
+                            t5 = setInterval(() => {
+                                lonCon.src = 'image/chayphai4.png';
+                            }, 160);
+                        }, 80);
+                        s6 = setTimeout(() => {
+                            t6 = setInterval(() => {
+                                lonCon.src = 'image/chayphai3.png';
+                            }, 160);
+                        }, 100);
+                        s7 = setTimeout(() => {
+                            t7 = setInterval(() => {
+                                lonCon.src = 'image/chayphai2.png';
+                            }, 160);
+                        }, 120);
+                        s8 = setTimeout(() => {
+                            t8 = setInterval(() => {
+                                lonCon.src = 'image/chayphai1.png';
+                            }, 160);
+                        }, 140);
+                        t = setInterval(() => {
+                            if (yLonCon <= screen.width-100)
+                                yLonCon++;
+                            lonCon.style.left = yLonCon + 'px';
+                        }, 10);
+                    }
+                    else if (trangThai == 'cuithang' && dungTrai)
+                    {
+                        dungPhai = false;
+                        trangThai = 'cuithangphai';
+                        s1 = setTimeout(() => {
+                            t1 = setInterval(() => {
+                                lonCon.src = 'image/cui2.png';
+                            }, 150);
+                        }, 0);
+                        s2 = setTimeout(() => {
+                            t2 = setInterval(() => {
+                                lonCon.src = 'image/cui1.png';
+                            }, 150);
+                        }, 100);
+                        t = setInterval(() => {
+                            if (yLonCon <= screen.width-100)
+                                yLonCon++;
+                            lonCon.style.left = yLonCon + 'px';
+                        }, 10);
+                    }
+                    else if (trangThai == 'cuiphai' && dungTrai)
+                    {
+                        dungPhai = false;
+                        trangThai = 'cuiphaiphai';
+                        s1 = setTimeout(() => {
+                            t1 = setInterval(() => {
+                                lonCon.src = 'image/cui2.png';
+                            }, 150);
+                        }, 0);
+                        s2 = setTimeout(() => {
+                            t2 = setInterval(() => {
+                                lonCon.src = 'image/cui1.png';
+                            }, 150);
+                        }, 100);
+                        t = setInterval(() => {
+                            if (yLonCon <= screen.width-100)
+                                yLonCon++;
+                            lonCon.style.left = yLonCon + 'px';
+                        }, 10);
+                    }
+                    else if (trangThai == 'cuitrai' && dungTrai)
+                    {
+                        dungPhai = false;
+                        trangThai = 'cuitraiphai';
+                        s1 = setTimeout(() => {
+                            t1 = setInterval(() => {
+                                lonCon.src = 'image/cui2.png';
+                            }, 150);
+                        }, 0);
+                        s2 = setTimeout(() => {
+                            t2 = setInterval(() => {
+                                lonCon.src = 'image/cui1.png';
+                            }, 150);
+                        }, 100);
+                        t = setInterval(() => {
+                            if (yLonCon <= screen.width-100)
+                                yLonCon++;
+                            lonCon.style.left = yLonCon + 'px';
+                        }, 10);
+                    }
+                    else if (trangThai == 'nhay')
+                    {
+                        lonCon.src = 'image/nhayphai.png';
+                        trangThai = 'nhayphai';
+                        t3 = setInterval(() => {
+                            if (yLonCon <= screen.width-100)
+                                yLonCon += 2;
+                            lonCon.style.left = yLonCon + 'px';
+                            if (xlonCon == 310)
+                            {
+                                clearInterval(t3);
+                            }
+                        }, 10);
+                    }
+                }
+                else if (event.keyCode == 37 && diChuyen)
+                {
+                    if (trangThai == 'nhinthang')
+                    {
+                        xthang();
+                        trangThai = 'khongxacdinh';
+                        var xLonCon = 310;
+                        var tangGiam = 1;
+                        t1 = setInterval(() => {
+                            xLonCon -= tangGiam;
+                            lonCon.style.top = xLonCon + 'px';
+                            if (xLonCon == 290)
+                                tangGiam = -1;
+                            if (xLonCon == 310)
+                                clearInterval(t1);
+                            else if (xLonCon > 310)
+                            {
+                                xLonCon = 310;
+                                lonCon.style.top = xLonCon + 'px';
+                                clearInterval(t1);
+                            }
+                        }, 6);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoaytrai0.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoaytrai1.png';
+                        }, 60);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoaytrai2.png';
+                        }, 120);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoaytrai3.png';
+                        }, 180);
+                        setTimeout(() => {
+                            lonCon.src = 'image/idlengangtrai0.png';
+                            trangThai = 'idletrai';
+                            trai();
+                        }, 240);
+                    }
+                    else if (trangThai == 'idlephai')
+                    {
+                        xphai();
+                        trangThai = 'khongxacdinh';
+                        var xLonCon = 310;
+                        var tangGiam = 1;
+                        t1 = setInterval(() => {
+                            xLonCon -= tangGiam;
+                            lonCon.style.top = xLonCon + 'px';
+                            if (xLonCon == 290)
+                                tangGiam = -1;
+                            if (xLonCon == 310)
+                                clearInterval(t1);
+                            else if (xLonCon > 310)
+                            {
+                                xLonCon = 310;
+                                lonCon.style.top = xLonCon + 'px';
+                                clearInterval(t1);
+                            }
+                        }, 6);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoayphai3.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoayphai2.png';
+                        }, 60);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoayphai1.png';
+                        }, 120);
+                        setTimeout(() => {
+                            lonCon.src = 'image/xoayphai0.png';
+                        }, 180);
+                        setTimeout(() => {
+                            lonCon.src = 'image/nhinthang0.png';
+                            trangThai = 'nhinthang';
+                            thang();
+                        }, 240);
+                    }
+                    else if (trangThai == 'idletrai')
+                    {
+                        xtrai();
+                        trangThai = 'chaytrai';
+                        s1 = setTimeout(() => {
+                            t1 = setInterval(() => {
+                                lonCon.src = 'image/chaytrai0.png';
+                            }, 160);
+                        }, 0);
+                        s2 = setTimeout(() => {
+                            t2 = setInterval(() => {
+                                lonCon.src = 'image/chaytrai1.png';
+                            }, 160);
+                        }, 20);
+                        s3 = setTimeout(() => {
+                            t3 = setInterval(() => {
+                                lonCon.src = 'image/chaytrai2.png';
+                            }, 160);
+                        }, 40);
+                        s4 = setTimeout(() => {
+                            t4 = setInterval(() => {
+                                lonCon.src = 'image/chaytrai3.png';
+                            }, 160);
+                        }, 60);
+                        s5 = setTimeout(() => {
+                            t5 = setInterval(() => {
+                                lonCon.src = 'image/chaytrai4.png';
+                            }, 160);
+                        }, 80);
+                        s6 = setTimeout(() => {
+                            t6 = setInterval(() => {
+                                lonCon.src = 'image/chaytrai3.png';
+                            }, 160);
+                        }, 100);
+                        s7 = setTimeout(() => {
+                            t7 = setInterval(() => {
+                                lonCon.src = 'image/chaytrai2.png';
+                            }, 160);
+                        }, 120);
+                        s8 = setTimeout(() => {
+                            t8 = setInterval(() => {
+                                lonCon.src = 'image/chaytrai1.png';
+                            }, 160);
+                        }, 140);
+                        t = setInterval(() => {
+                            if (yLonCon >= 0)
+                                yLonCon--;
+                            lonCon.style.left = yLonCon + 'px';
+                        }, 10);
+                        
+                    }
+                    else if (trangThai == 'cuithang' && dungPhai)
+                    {
+                        dungTrai = false;
+                        trangThai = 'cuithangtrai';
+                        s1 = setTimeout(() => {
+                            t1 = setInterval(() => {
+                                lonCon.src = 'image/cui1.png';
+                            }, 150);
+                        }, 0);
+                        s2 = setTimeout(() => {
+                            t2 = setInterval(() => {
+                                lonCon.src = 'image/cui2.png';
+                            }, 150);
+                        }, 100);
+                        t = setInterval(() => {
+                            if (yLonCon >= 0)
+                                yLonCon--;
+                            lonCon.style.left = yLonCon + 'px';
+                        }, 10);
+                    }
+                    else if (trangThai == 'cuiphai' && dungPhai)
+                    {
+                        dungTrai = false;
+                        trangThai = 'cuiphaitrai';
+                        s1 = setTimeout(() => {
+                            t1 = setInterval(() => {
+                                lonCon.src = 'image/cui1.png';
+                            }, 150);
+                        }, 0);
+                        s2 = setTimeout(() => {
+                            t2 = setInterval(() => {
+                                lonCon.src = 'image/cui2.png';
+                            }, 150);
+                        }, 100);
+                        t = setInterval(() => {
+                            if (yLonCon >= 0)
+                                yLonCon--;
+                            lonCon.style.left = yLonCon + 'px';
+                        }, 10);
+                    }
+                    else if (trangThai == 'cuitrai' && dungPhai)
+                    {
+                        dungTrai = false;
+                        trangThai = 'cuitraitrai';
+                        s1 = setTimeout(() => {
+                            t1 = setInterval(() => {
+                                lonCon.src = 'image/cui1.png';
+                            }, 150);
+                        }, 0);
+                        s2 = setTimeout(() => {
+                            t2 = setInterval(() => {
+                                lonCon.src = 'image/cui2.png';
+                            }, 150);
+                        }, 100);
+                        t = setInterval(() => {
+                            if (yLonCon >= 0)
+                                yLonCon--;
+                            lonCon.style.left = yLonCon + 'px';
+                        }, 10);
+                    }
+                    else if (trangThai == 'nhay')
+                    {
+                        lonCon.src = 'image/nhaytrai.png';
+                        trangThai = 'nhaytrai';
+                        t3 = setInterval(() => {
+                            if (yLonCon >= 0)
+                                yLonCon -= 2;
+                            lonCon.style.left = yLonCon + 'px';
+                            if (xlonCon == 310)
+                            {
+                                clearInterval(t3);
+                            }
+                        }, 10);
+                    }
+                }
+                else if (event.keyCode == 38 && diChuyen)
+                {
+                    if (trangThai == 'cuithang')
+                    {   
+                        thang();
+                        trangThai = 'nhinthang';
+                        setTimeout(() => {
+                            lonCon.src = 'image/chayphai4.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/nhinthang0.png';
+                        }, 100);
+                    }
+                    else if (trangThai == 'cuiphai')
+                    {
+                        phai();
+                        trangThai = 'idlephai';
+                        setTimeout(() => {
+                            lonCon.src = 'image/chayphai4.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/idlengangphai0.png';
+                        }, 100);
+                    } 
+                    else if (trangThai == 'cuitrai')
+                    {
+                        trai();
+                        trangThai = 'idletrai';
+                        setTimeout(() => {
+                            lonCon.src = 'image/chaytrai4.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/idlengangtrai0.png';
+                        }, 100);
+                    }
+                }
+                else if (event.keyCode == 40 && diChuyen)
+                {
+                    if (trangThai == 'nhinthang')
+                    {   
+                        xthang();
+                        trangThai = 'cuithang';
+                        setTimeout(() => {
+                            lonCon.src = 'image/chayphai4.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/cui0.png';
+                        }, 100);
+                        
+                    }
+                    else if (trangThai == 'idlephai')
+                    {
+                        xphai();
+                        trangThai = 'cuiphai';
+                        setTimeout(() => {
+                            lonCon.src = 'image/chayphai4.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/cui0.png';
+                        }, 100);
+                    } 
+                    else if (trangThai == 'idletrai')
+                    {
+                        xtrai();
+                        trangThai = 'cuitrai';
+                        setTimeout(() => {
+                            lonCon.src = 'image/chaytrai4.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/cui0.png';
+                        }, 100);
+                    }
+                }
+                else if (event.keyCode == 65 && diChuyen)
+                {
+                    if (trangThai == 'idlephai')
+                    {
+                        xphai();
+                        trangThai = 'damphai';
+                        setTimeout(() => {
+                            lonCon.src = 'image/chayphai4.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/cui0.png';
+                        }, 100);
+                        setTimeout(() => {
+                            lonCon.src = 'image/damphai0.png';
+                        }, 500);
+                        setTimeout(() => {
+                            lonCon.src = 'image/damphai1.png';
+                            damBong();
+                        }, 700);
+                        setTimeout(() => {
+                            lonCon.src = 'image/cui0.png';
+                        }, 900);
+                        setTimeout(() => {
+                            lonCon.src = 'image/chayphai4.png';
+                        }, 1000);
+                        setTimeout(() => {
+                            lonCon.src = 'image/idlengangphai0.png';
+                            trangThai = 'idlephai';
+                            phai();
+                        }, 1100);
+                    }
+                    else if (trangThai == 'idletrai')
+                    {
+                        xtrai();
+                        trangThai = 'damtrai';
+                        setTimeout(() => {
+                            lonCon.src = 'image/chaytrai4.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/cui0.png';
+                        }, 100);
+                        setTimeout(() => {
+                            lonCon.src = 'image/damtrai0.png';
+                        }, 500);
+                        setTimeout(() => {
+                            lonCon.src = 'image/damtrai1.png';
+                            damBong();
+                        }, 700);
+                        setTimeout(() => {
+                            lonCon.src = 'image/cui0.png';
+                        }, 900);
+                        setTimeout(() => {
+                            lonCon.src = 'image/chaytrai4.png';
+                        }, 1000);
+                        setTimeout(() => {
+                            lonCon.src = 'image/idlengangtrai0.png';
+                            trangThai = 'idletrai';
+                            trai();
+                        }, 1100);
+                    }
+                    else if (trangThai == 'cuithang' || trangThai == 'cuiphai')
+                    {
+                        trangThai = 'damcuiphai';
+                        setTimeout(() => {
+                            lonCon.src = 'image/damphai0.png';
+                        }, 100);
+                        setTimeout(() => {
+                            lonCon.src = 'image/damphai1.png';
+                            damBong();
+                        }, 300);
+                        setTimeout(() => {
+                            lonCon.src = 'image/cui0.png';
+                            trangThai = 'cuiphai';
+                        }, 500);
+                    }
+                    else if (trangThai == 'cuitrai')
+                    {
+                        trangThai = 'damcuitrai';
+                        setTimeout(() => {
+                            lonCon.src = 'image/damtrai0.png';
+                        }, 100);
+                        setTimeout(() => {
+                            lonCon.src = 'image/damtrai1.png';
+                            damBong();
+                        }, 300);
+                        setTimeout(() => {
+                            lonCon.src = 'image/cui0.png';
+                            trangThai = 'cuitrai';
+                        }, 500);
+                    }
+                    else if (trangThai == 'nhayphai')
+                    {
+                        clearInterval(t1);
+                        clearTimeout(s1);
+                        clearInterval(t2);
+                        clearInterval(t3);
+                        clearInterval(t4);
+                        chuaNhaMuiTenPhai = false;
+                        trangThai = 'damnhayphai';
+                        setTimeout(() => {
+                            lonCon.src = 'image/cui0.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/damphai0.png';
+                        }, 100);
+                        setTimeout(() => {
+                            lonCon.src = 'image/damphai1.png';
+                            damBong();
+                            damHeo();
+                        }, 300);
+                        setTimeout(() => {
+                            lonCon.src = 'image/nhayphai.png';
+                            trangThai = 'nhayphai1';
+                            var tangGiam;
+                            if (xlonCon >= 260)
+                                tangGiam = 2;
+                            else tangGiam = 1;
+                            t2 = setInterval(() => {
+                                xlonCon += tangGiam;
+                                lonCon.style.top = xlonCon + 'px';
+                                if (xlonCon >= 260)
+                                {
+                                    tangGiam = 2;
+                                }
+                                if (xlonCon == 310)
+                                {
+                                    clearInterval(t2);
+                                    lonCon.src = 'image/idlengangphai0.png';
+                                    trangThai = 'idlephai';
+                                    phai();
+                                    chuaNhaMuiTenPhai = true;
+                                    chuaNhaMuiTenTrai = true;
+                                }
+                                else if (xlonCon > 310)
+                                {
+                                    xlonCon = 310;
+                                    lonCon.style.top = xlonCon + 'px';
+                                    clearInterval(t2);
+                                    lonCon.src = 'image/idlengangphai0.png';
+                                    trangThai = 'idlephai';
+                                    phai();
+                                    chuaNhaMuiTenPhai = true;
+                                    chuaNhaMuiTenTrai = true;
+                                }
+                            }, 10);
+                            t4 = setInterval(() => {
+                                if (yLonCon <= screen.width-100)
+                                    yLonCon += 1;
+                                lonCon.style.left = yLonCon + 'px';
+                                if (xlonCon >= 310)
+                                {
+                                    clearInterval(t4);
+                                }
+                            }, 15);
+                        }, 500);
+                    }
+                    else if (trangThai == 'nhaytrai')
+                    {
+                        clearInterval(t1);
+                        clearTimeout(s1);
+                        clearInterval(t2);
+                        clearInterval(t3);
+                        clearInterval(t4);
+                        chuaNhaMuiTenPhai = false;
+                        trangThai = 'damnhaytrai';
+                        setTimeout(() => {
+                            lonCon.src = 'image/cui0.png';
+                        }, 0);
+                        setTimeout(() => {
+                            lonCon.src = 'image/damtrai0.png';
+                        }, 100);
+                        setTimeout(() => {
+                            lonCon.src = 'image/damtrai1.png';
+                            damBong();
+                            damHeo();
+                        }, 300);
+                        setTimeout(() => {
+                            lonCon.src = 'image/nhaytrai.png';
+                            trangThai = 'nhaytrai1';
+                            var tangGiam;
+                            if (xlonCon >= 260)
+                                tangGiam = 2;
+                            else tangGiam = 1;
+                            t2 = setInterval(() => {
+                                xlonCon += tangGiam;
+                                lonCon.style.top = xlonCon + 'px';
+                                if (xlonCon >= 260)
+                                {
+                                    tangGiam = 2;
+                                }
+                                if (xlonCon == 310)
+                                {
+                                    clearInterval(t2);
+                                    lonCon.src = 'image/idlengangtrai0.png';
+                                    trangThai = 'idletrai';
+                                    trai();
+                                    chuaNhaMuiTenPhai = true;
+                                    chuaNhaMuiTenTrai = true;
+                                }
+                                else if (xlonCon > 310)
+                                {
+                                    xlonCon = 310;
+                                    lonCon.style.top = xlonCon + 'px';
+                                    clearInterval(t2);
+                                    lonCon.src = 'image/idlengangtrai0.png';
+                                    trangThai = 'idletrai';
+                                    trai();
+                                    chuaNhaMuiTenPhai = true;
+                                    chuaNhaMuiTenTrai = true;
+                                }
+                            }, 10);
+                            t4 = setInterval(() => {
+                                if (yLonCon >= 0)
+                                    yLonCon -= 1;
+                                lonCon.style.left = yLonCon + 'px';
+                                if (xlonCon >= 310)
+                                {
+                                    clearInterval(t4);
+                                }
+                            }, 15);
+                        }, 500);
+                    }
+                }
+                else if (event.keyCode == 32 && diChuyen)
+                {
+                    if (trangThai == 'nhinthang')
+                    {
+                        xthang();
+                        trangThai = 'nhay';
+                        lonCon.src = 'image/nhaydu2.png';
+                        var tangGiam = 2;
+                        t1 = setInterval(() => {
+                            xlonCon -= tangGiam;
+                            lonCon.style.top = xlonCon + 'px';
+                            if (xlonCon == 260)
+                            {
+                                tangGiam = 1;
+                            }
+                            else if (xlonCon == 220)
+                            {
+                                clearInterval(t1);
+                                s1 = setTimeout(() => {
+                                    t2 = setInterval(() => {
+                                        xlonCon += tangGiam;
+                                        lonCon.style.top = xlonCon + 'px';
+                                        if (xlonCon == 260)
+                                        {
+                                            tangGiam = 2;
+                                        }
+                                        else if (xlonCon == 310)
+                                        {
+                                            clearInterval(t2);
+                                            if (trangThai == 'nhaytrai')
+                                            {
+                                                lonCon.src = 'image/idlengangtrai0.png';
+                                                trangThai = 'idletrai';
+                                                trai();
+                                            }
+                                            else if (trangThai == 'nhayphai')
+                                            {
+                                                lonCon.src = 'image/idlengangphai0.png';
+                                                trangThai = 'idlephai';
+                                                phai();
+                                            }
+                                            else
+                                            {
+                                                lonCon.src = 'image/nhinthang0.png';
+                                                trangThai = 'nhinthang';
+                                                thang();
+                                            }
+                                            chuaNhaMuiTenPhai = true;
+                                            chuaNhaMuiTenTrai = true;
+                                        }
+                                    }, 10);
+                                }, 200);
+                            }
+                        }, 10);
+                    }
+                    else if (trangThai == 'idletrai')
+                    {
+                        xtrai();
+                        trangThai = 'nhay';
+                        lonCon.src = 'image/nhaytrai.png';
+                        var tangGiam = 2;
+                        t1 = setInterval(() => {
+                            xlonCon -= tangGiam;
+                            lonCon.style.top = xlonCon + 'px';
+                            if (xlonCon == 260)
+                            {
+                                tangGiam = 1;
+                            }
+                            else if (xlonCon == 220)
+                            {
+                                clearInterval(t1);
+                                s1 = setTimeout(() => {
+                                    t2 = setInterval(() => {
+                                        xlonCon += tangGiam;
+                                        lonCon.style.top = xlonCon + 'px';
+                                        if (xlonCon == 260)
+                                        {
+                                            tangGiam = 2;
+                                        }
+                                        else if (xlonCon == 310)
+                                        {
+                                            clearInterval(t2);
+                                            if (trangThai == 'nhayphai')
+                                            {
+                                                lonCon.src = 'image/idlengangphai0.png';
+                                                trangThai = 'idlephai';
+                                                phai();
+                                            }
+                                            else
+                                            {
+                                                lonCon.src = 'image/idlengangtrai0.png';
+                                                trangThai = 'idletrai';
+                                                trai();
+                                            }
+                                            chuaNhaMuiTenPhai = true;
+                                            chuaNhaMuiTenTrai = true;
+                                        }
+                                    }, 10);
+                                }, 200);
+                            }
+                        }, 10);
+                    }
+                    else if (trangThai == 'idlephai')
+                    {
+                        xphai();
+                        trangThai = 'nhay';
+                        lonCon.src = 'image/nhayphai.png';
+                        var tangGiam = 2;
+                        t1 = setInterval(() => {
+                            xlonCon -= tangGiam;
+                            lonCon.style.top = xlonCon + 'px';
+                            if (xlonCon == 260)
+                            {
+                                tangGiam = 1;
+                            }
+                            else if (xlonCon == 220)
+                            {
+                                clearInterval(t1);
+                                s1 = setTimeout(() => {
+                                    t2 = setInterval(() => {
+                                        xlonCon += tangGiam;
+                                        lonCon.style.top = xlonCon + 'px';
+                                        if (xlonCon == 260)
+                                        {
+                                            tangGiam = 2;
+                                        }
+                                        else if (xlonCon == 310)
+                                        {
+                                            clearInterval(t2);
+                                            if (trangThai == 'nhaytrai')
+                                            {
+                                                lonCon.src = 'image/idlengangtrai0.png';
+                                                trangThai = 'idletrai';
+                                                trai();
+                                            }
+                                            else
+                                            {
+                                                lonCon.src = 'image/idlengangphai0.png';
+                                                trangThai = 'idlephai';
+                                                phai();
+                                            }
+                                            chuaNhaMuiTenPhai = true;
+                                            chuaNhaMuiTenTrai = true;
+                                        }
+                                    }, 10);
+                                }, 200);
+                            }
+                        }, 10);
+                    }
+                    else if (trangThai == 'chayphai')
+                    {
+                        clearTimeout(s2);
+                        clearTimeout(s3);
+                        clearTimeout(s4);
+                        clearTimeout(s5);
+                        clearTimeout(s6);
+                        clearTimeout(s7);
+                        clearTimeout(s8);
+                        clearInterval(t);
+                        clearInterval(t1);
+                        clearInterval(t2);
+                        clearInterval(t3);
+                        clearInterval(t4);
+                        clearInterval(t5);
+                        clearInterval(t6);
+                        clearInterval(t7);
+                        clearInterval(t8);
+                        trangThai = 'nhayphai';
+                        lonCon.src = 'image/nhayphai.png';
+                        var tangGiam = 2;
+                        t1 = setInterval(() => {
+                            xlonCon -= tangGiam;
+                            lonCon.style.top = xlonCon + 'px';
+                            if (xlonCon == 260)
+                            {
+                                tangGiam = 1;
+                            }
+                            else if (xlonCon == 220)
+                            {
+                                clearInterval(t1);
+                                s1 = setTimeout(() => {
+                                    t2 = setInterval(() => {
+                                        xlonCon += tangGiam;
+                                        lonCon.style.top = xlonCon + 'px';
+                                        if (xlonCon == 260)
+                                        {
+                                            tangGiam = 2;
+                                        }
+                                        else if (xlonCon == 310)
+                                        {   
+                                            chuaNhaMuiTenPhai = true;
+                                            chuaNhaMuiTenTrai = true;
+                                            clearInterval(t2);
+                                            lonCon.src = 'image/idlengangphai0.png';
+                                            trangThai = 'idlephai';
+                                            phai();
+                                        }
+                                    }, 10);
+                                }, 200);
+                            }
+                        }, 10);
+                        if (chuaNhaMuiTenPhai)
+                        {
+                            t3 = setInterval(() => {
+                                if (yLonCon <= screen.width-100)
+                                    yLonCon += 2;
+                                lonCon.style.left = yLonCon + 'px';
+                                if (xlonCon >= 310)
+                                {
+                                    clearInterval(t3);
+                                }
+                            }, 10);
+                        }
+                    }
+                    else if (trangThai == 'chaytrai')
+                    {
+                        clearTimeout(s2);
+                        clearTimeout(s3);
+                        clearTimeout(s4);
+                        clearTimeout(s5);
+                        clearTimeout(s6);
+                        clearTimeout(s7);
+                        clearTimeout(s8);
+                        clearInterval(t);
+                        clearInterval(t1);
+                        clearInterval(t2);
+                        clearInterval(t3);
+                        clearInterval(t4);
+                        clearInterval(t5);
+                        clearInterval(t6);
+                        clearInterval(t7);
+                        clearInterval(t8);
+                        trangThai = 'nhaytrai';
+                        lonCon.src = 'image/nhaytrai.png';
+                        var tangGiam = 2;
+                        t1 = setInterval(() => {
+                            xlonCon -= tangGiam;
+                            lonCon.style.top = xlonCon + 'px';
+                            if (xlonCon == 260)
+                            {
+                                tangGiam = 1;
+                            }
+                            else if (xlonCon == 220)
+                            {
+                                clearInterval(t1);
+                                s1 = setTimeout(() => {
+                                    t2 = setInterval(() => {
+                                        xlonCon += tangGiam;
+                                        lonCon.style.top = xlonCon + 'px';
+                                        if (xlonCon == 260)
+                                        {
+                                            tangGiam = 2;
+                                        }
+                                        else if (xlonCon == 310)
+                                        {   
+                                            chuaNhaMuiTenPhai = true;
+                                            chuaNhaMuiTenTrai = true;
+                                            clearInterval(t2);
+                                            lonCon.src = 'image/idlengangtrai0.png';
+                                            trangThai = 'idletrai';
+                                            trai();
+                                        }
+                                    }, 10);
+                                }, 200);
+                            }
+                        }, 10);
+                        if (chuaNhaMuiTenTrai)
+                        {
+                            t3 = setInterval(() => {
+                                if (yLonCon >= 0)
+                                    yLonCon -= 2;
+                                lonCon.style.left = yLonCon + 'px';
+                                if (xlonCon >= 310)
+                                {
+                                    clearInterval(t3);
+                                }
+                            }, 10);
+                        }
+                    }
+                }
+                else if (event.keyCode == 70 && diChuyen)
+                {
+                    if (r1)
+                    {
+                        if (xlonCon == 310 && yLonCon >= 700 && yLonCon <= 740)
+                        {
+                            setTimeout(() => {
+                                ruong.src = 'image/ruong1.png';
+                            }, 200);
+                            setTimeout(() => {
+                                ruong.src = 'image/ruong2.png';
+                            }, 400);
+                            setTimeout(() => {
+                                ruong.src = 'image/ruong3.png';
+                                if (ten1 == 'Trúc')
+                                {
+                                    qua.innerHTML = '';
+                                }
+                                else if (ten1 == 'Hương')
+                                {
+                                    qua.innerHTML = '';
+                                }
+                                else 
+                                {
+                                    qua.innerHTML = '';
+                                }
+                                qua.style.opacity = '100%';
+                            }, 600);
+                        }
+                    }
+                }
+            }
+            document.onkeyup = (event) => {
+                if (event.keyCode == 39 && diChuyen)
+                {
+                    if (trangThai == 'chayphai')
+                    {
+                        clearTimeout(s2);
+                        clearTimeout(s3);
+                        clearTimeout(s4);
+                        clearTimeout(s5);
+                        clearTimeout(s6);
+                        clearTimeout(s7);
+                        clearTimeout(s8);
+                        clearInterval(t);
+                        clearInterval(t2);
+                        clearInterval(t3);
+                        clearInterval(t4);
+                        clearInterval(t5);
+                        clearInterval(t6);
+                        clearInterval(t7);
+                        clearInterval(t8);
+                        setTimeout(() => {
+                            
+                            clearInterval(t1);
+                            lonCon.src = 'image/idlengangphai0.png';
+                            trangThai = 'idlephai';
+                            phai();
+                        }, 100);
+                    }
+                    else if (trangThai == 'cuithangphai' || trangThai == 'cuitraiphai' || trangThai == 'cuiphaiphai')
+                    {
+                        clearInterval(t);
+                        setTimeout(() => {
+                            clearInterval(t1);
+                            clearInterval(t2);
+                            lonCon.src = 'image/cui0.png';
+                            trangThai = 'cuiphai';
+                            dungPhai = true;
+                        }, 200);
+                    }
+                    else if (trangThai == 'nhayphai' && chuaNhaMuiTenPhai)
+                    {
+                        chuaNhaMuiTenPhai = false;
+                        clearInterval(t3);
+                        t4 = setInterval(() => {
+                            if (yLonCon <= screen.width-100)
+                                yLonCon += 1;
+                            lonCon.style.left = yLonCon + 'px';
+                            if (xlonCon >= 310)
+                            {
+                                clearInterval(t4);
+                            }
+                        }, 15);
+                    }
+                }
+                else if (event.keyCode == 37 && diChuyen)
+                {
+                    if (trangThai == 'chaytrai')
+                    {
+                        clearTimeout(s2);
+                        clearTimeout(s3);
+                        clearTimeout(s4);
+                        clearTimeout(s5);
+                        clearTimeout(s6);
+                        clearTimeout(s7);
+                        clearTimeout(s8);
+                        clearInterval(t);
+                        clearInterval(t2);
+                        clearInterval(t3);
+                        clearInterval(t4);
+                        clearInterval(t5);
+                        clearInterval(t6);
+                        clearInterval(t7);
+                        clearInterval(t8);
+                        setTimeout(() => {
+                            
+                            clearInterval(t1);
+                            lonCon.src = 'image/idlengangtrai0.png';
+                            trangThai = 'idletrai';
+                            trai();
+                        }, 100);
+                    }
+                    else if (trangThai == 'cuithangtrai' || trangThai == 'cuitraitrai' || trangThai == 'cuiphaitrai')
+                    {
+                        clearInterval(t);
+                        setTimeout(() => {
+                            clearInterval(t1);
+                            clearInterval(t2);
+                            lonCon.src = 'image/cui0.png';
+                            trangThai = 'cuitrai';
+                            dungTrai = true;
+                        }, 200);
+                    }
+                    else if (trangThai == 'nhaytrai' && chuaNhaMuiTenTrai)
+                    {
+                        chuaNhaMuiTenTrai = false;
+                        clearInterval(t3);
+                        t4 = setInterval(() => {
+                            if (yLonCon >= 0)
+                                yLonCon -= 1;
+                            lonCon.style.left = yLonCon + 'px';
+                            if (xlonCon >= 310)
+                            {
+                                clearInterval(t4);
+                            }
+                        }, 15);
+                    }
+                }
+            }
+            var ten, ten1, daBamOK = false;
+            function nhapTen()
+            {
+                bangNhapTen.style.opacity = '100%';
+                bangNhapTen.style.zIndex = '1';
+                OK.onclick = () => {
+                    if (!daBamOK){
+                    ten = document.getElementById('ten').value;
+                    if (ten == 'Truc' || ten == 'truc' || ten == 'Vi Thi Thanh Truc' || ten == 'Thanh Truc' || ten == 'thanh truc' || ten == 'vi thi thanh truc' || ten == 'Trúc' || ten == 'Thanh Trúc' || ten == 'Vi Thị Thanh Trúc' || ten == 'trúc' || ten == 'thanh trúc' || ten == 'vi thị thanh trúc')
+                    {
+                        ten1 = 'Trúc';
+                        sauNhapTen();
+                    }
+                    else if (ten == 'Huong' || ten == 'huong' || ten == 'Ha Thi Quynh Huong' || ten == 'Quynh Huong' || ten == 'quynh huong' || ten == 'ha thi quynh huong' || ten == 'Hương' || ten == 'Quỳnh Hương' || ten == 'Hà Thị Quỳnh Hương' || ten == 'hương' || ten == 'quỳnh hương' || ten == 'hà thị quỳnh hương')
+                    {
+                        ten1 = 'Hương';
+                        sauNhapTen();
+                    }
+                    else if (ten == 'Trang' || ten == 'trang' || ten == 'Dao Thu Trang' || ten == 'Thu Trang' || ten == 'thu trang' || ten == 'dao thu trang' || ten == 'Đào Thu Trang' || ten == 'đào thu trang')
+                    {
+                        ten1 = 'Trang';
+                        sauNhapTen();
+                    }
+                    else nhapLaiTen();
+                    }
+                }
+            }
+            function sauNhapTen()
+            {
+                bangNhapTen.style.opacity = '0%';
+                bangNhapTen.style.zIndex = '0';
+                loiThoai.innerHTML = ' ';
+                setTimeout(() => {
+                    if (ten1 == 'Trúc')
+                    {
+                        loiThoai.innerHTML = 'Ồ hóa ra là bạn Trúc dễ thương ò ~~';
+                    }
+                    else if (ten1 == 'Hương')
+                    {
+                        loiThoai.innerHTML = 'Hello bạn Hương nhớ';
+                    }
+                    else {
+                        loiThoai.innerHTML = 'Hello bạn Trang nha';
+                    }
+                    daBamOK = true;
+                    loiThoai3 = true;
+                }, 500);
+            }
+            function nhapLaiTen()
+            {
+                loiThoai.innerHTML = ' ';
+                setTimeout(() => {
+                    loiThoai.innerHTML = 'Trong danh sách không có ai tên thế này cả. Bạn có thể nhập lại không .-.'
+                }, 500);
+            }
+            function chamDat() 
+            {
+                var i = 64;
+                clearInterval(t1);
+                clearInterval(t2);
+                clearInterval(t3);
+                clearInterval(t4);
+                thang();
+                lonCon.src = 'image/nhinthang1.png';
+                du.style.transform = 'rotate(-20deg)';
+                l = setInterval(() => {
+                    du.style.left = i + 'px';
+                    i -= 2;
+                    if (i == -180)
+                    {
+                        clearInterval(l);
+                        gtNhanVat();
+                    }
+                }, 15);
+            }
+            function gtNhanVat()
+            {
+                khungLoiThoai.style.opacity = '100%';
+                loiThoai.style.opacity = '100%';
+                loiThoai.innerHTML = 'Mình tên là ';
+                setTimeout(() => {
+                    loiThoai.innerHTML = "Mình tên là MiniPig";
+                    loiThoai2 = true;
+                }, 500);
             }
                    
         </script>
-        <link rel="stylesheet" href="filecss.css" />
+        
     </body>
 </html>

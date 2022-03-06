@@ -46,7 +46,6 @@ body {
   position: absolute;
   border: solid 3px;
   border-radius: 30px;
-  margin: 0 auto;
   top: 20%;
   left: 10vw;
   width: 80vw;
@@ -73,7 +72,7 @@ body {
   width: 6vw;
   height: 6vw;
   left: 47vw;
-  top: 15vw;
+  top: 200px;
   transform: rotate(0deg);
   opacity: 100%;
 }
@@ -83,6 +82,113 @@ body {
   width: 6vw;
   height: 6vw;
   left: 47vw;
-  top: 15vw;
+  top: 200px;
+  opacity: 0%;
+}
+
+#TBMoDau {
+  position: absolute;
+  left: 30vw;
+  width: 40vw;
+  top: 50px;
+  opacity: 0%;
+}
+
+#loiNoiDau1 {
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial;
+  top: 65px;
+}
+
+#loiNoiDau2 {
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial;
+  top: 20px;
+}
+
+#duong {
+  position: absolute;
+  border: solid 2px;
+  top: 400px;
+  width: 0vw;
+  background-color: black;
+  opacity: 0%;
+}
+
+#du {
+  position: absolute;
+  top: -200px;
+  width: 150px;
+  height: 150px;
+  left: 75px;
+}
+
+#lonCon {
+  position: absolute;
+  top: -100px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+#lonTo {
+  position: absolute;
+  top: -250px;
+  left: 700px;
+  width: 260px;
+  height: 260px;
+  opacity: 100%;
+}
+
+#bong {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 382px;
+  left: 888px;
+  opacity: 0%;
+}
+
+#ruong {
+  position: absolute;
+  top: -75px;
+  left: 730px;
+  width: 80px;
+  height: 80px;
+  opacity: 100%;
+}
+
+#loiThoai {
+  position: absolute;
+  top: -240px;
+  left: 210px;
+  width: 125px;
+  height: 55px;
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+  opacity: 0%;
+}
+
+#khungLoiThoai {
+  position: absolute;
+  top: -250px;
+  left: 200px;
+  width: 150px;
+  height: 150px;
+  opacity: 0%;
+}
+
+#qua {
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  left: 700px;
+  top: 250px;
+  text-align: center;
   opacity: 0%;
 }
